@@ -21,7 +21,7 @@ Avaliable colours: `red` `green` `graphite` `orange` `grey` `white` `chocolate` 
 
 <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
 
-````html
+````
 <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
 ````
 
@@ -30,7 +30,7 @@ Avaliable colours: `red` `green` `graphite` `orange` `grey` `white` `chocolate` 
 
 <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/left-red@2x.png" alt="Fork me on GitHub"></a>
 
-````javascript
+````
 <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/left-red@2x.png" alt="Fork me on GitHub"></a>
 ````
 
@@ -41,6 +41,6 @@ Avaliable colours: `red` `green` `graphite` `orange` `grey` `white` `chocolate` 
 <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/left-dusk-blue@2x.png" alt="Fork me on GitHub"></a>
 
 
-````css
+````
 <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/left-dusk-blue@2x.png" alt="Fork me on GitHub"></a>
 ````
