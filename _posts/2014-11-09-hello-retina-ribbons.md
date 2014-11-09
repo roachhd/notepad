@@ -1,12 +1,11 @@
 ---
 title: Fork Me Retina Ribon Quick Snippets
 description: "Easy drop in retina Fork Me ribbons for GitHub projects"
-categories: Open-Source
+category: Tips n Tricks
 tags: [geek]
 author: Katie Ball
 comments: false
 share: true
-
 ---
 
 Goodbye blurry *Fork Me* ribbons and hello *Retina image*. These great ribbons crafted by [Aral](https://aralbalkan.com/scribbles/fork-me-on-github-retina-ribbons/) and are super easy to slip into your open source project page. 
