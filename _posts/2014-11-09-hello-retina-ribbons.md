@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Fork Me Retina Ribbons
 description: "Easy drop in Quick Snippets for retina GitHub Fork Me ribbons."
 category: Tips n Tricks
