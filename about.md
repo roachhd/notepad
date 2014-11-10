@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
+title: Katie-Lee Ball, Designer
 tags: [Hossain, Mohd, Faysal, hmfaysal]
 imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
   <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
+  <figcaption>Katie-Lee Ball, Designer</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
