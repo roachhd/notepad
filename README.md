@@ -1,7 +1,8 @@
 this is my notepad
 ==================
 
-collection of tips, tricks, articles! thoughts, random stuff, quick reference, and just whatever I want ❤️
+The personal notepad of Katie Ball. Katie is a web developer and game maker, who also love PhotoShop, her kids, dogs and The Tiges. She studied at RMIT and Swinburne Universities in Melbourne Australia, have made heaps of websites and web apps, published 3 apps across all the major app stores. And is currently loving Jeyll, Grunt, GitHub and all things open source ❤️
+
 
 ------------------------------------------
 
