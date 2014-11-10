@@ -4,15 +4,21 @@ notepad
 collection of tips, tricks, cheat-sheets, articles.
 
 
-######Categories
+######Categories:
 - web-development
-- photoshop
-- 
+- Design
+- Game-Development
+- Workflow
 
 
-######Taged
+######Tags:
 - reference
 - git
+- photoshop
+- javascript
+- tips n tricks
+- quick reference
+- docs
 
 
 ######Front Matter
@@ -20,11 +26,23 @@ collection of tips, tricks, cheat-sheets, articles.
 ---
 layout: post
 title: Theme Elements
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: "Just about everything you'll need to style in the theme."
+headline: 
 category: theme
 tags: [docs]
+mathjax: true
+chart: 
 imagefeature: cover6.jpg
 comments: false
 share: true
 ---
 ```
+
+######Good Cover Images:
+```yaml
+images/cover10.jpg
+images/cover3.jpg
+```
+
+---------
+
