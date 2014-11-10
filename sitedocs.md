@@ -1,20 +1,46 @@
-The front matter in this file is a sample post with a large feature image up top and tons of text. It's easy to set post image covers by using only Kramdown markdown, just place something like this: `![cover-image](http://path-to-your-image.jpg)
+#Site Docs
 
-###Post Front Matter.
+#####Front Matter
 
-######Front Matter for Post with a featured image:
-    
-        ---
-        layout: post
-        title: "Post with Cover Image and Text"
-        description: "Custom written post descriptions are the way to go... if you're not lazy."
-        category: theme
-        tags: [sample post, readability]
-        imagefeature: cover9.jpg
-        share: true
-        ---
+     Categories     |   Tags
+------------------- | ------------------
+web-development     | reference
+Design              | git
+Game-Development    | photoshop
+Workflow            | docs
+Life Hack           | tips n tricks
+                    | quick reference
+
+-----------------------------------------
+
+```yaml
+---
+layout: post
+title: Theme Elements
+description: "Just about everything you'll need to style in the theme."
+headline: 
+category: theme
+tags: [docs]
+mathjax: true
+chart: 
+imagefeature: cover6.jpg
+comments: false
+share: true
+---
+```
 
 
----------------------------
+
+----------------------------------
 
 
+
+#####Good Cover Images:
+```yaml
+images/cover10.jpg
+images/cover3.jpg
+```
+
+
+
+---------------------------------
