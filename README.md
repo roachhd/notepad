@@ -1,27 +1,26 @@
-notepad
-=======
+this is my notepad
+==================
 
-collection of tips, tricks, cheat-sheets, articles.
+collection of tips, tricks, articles! thoughts, random stuff, quick reference, and just whatever I want ❤️
 
+------------------------------------------
 
-######Categories:
-- web-development
-- Design
-- Game-Development
-- Workflow
+###my notes for my notepad (bahaha)
 
 
-######Tags:
-- reference
-- git
-- photoshop
-- javascript
-- tips n tricks
-- quick reference
-- docs
+#####Front Matter
 
+     Categories     |   Tags
+------------------- | ------------------
+web-development     | reference
+Design              | git
+Game-Development    | photoshop
+Workflow            | docs
+Life Hack           | tips n tricks
+                    | quick reference
 
-######Front Matter
+-----------------------------------------
+
 ```yaml
 ---
 layout: post
@@ -38,11 +37,12 @@ share: true
 ---
 ```
 
-######Good Cover Images:
+----------------------------------
+
+#####Good Cover Images:
 ```yaml
 images/cover10.jpg
 images/cover3.jpg
 ```
 
----------
-
+---------------------------------
