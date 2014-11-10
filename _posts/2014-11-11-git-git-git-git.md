@@ -8,7 +8,7 @@ share: true
 comments: false
 ---
 
-*If you are interested in my Git aliases, have a look at my `.bash_profile`, found here: https://github.com/roachhd/bash_profile/blob/master/.bash_profile*
+*If you are interested have a look at my `.dotfiles`, found here: https://github.com/roachhd/dotfiles *
 
 --
 
