@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependencies Done Right
+title: Package Dependencies Done Right
 category: Reference
 tags: [tech, geek, dev, tips, quick ref]
 share: true
@@ -101,4 +101,4 @@ If I had not specified my test library, vows, in the devDependencies section of 
 
 Node.js is evolving rapidly: it has been less than a month since npm 1.0 was released which dramatically changed the way in which dependencies are handled. More importantly: the modules on-top of node.js critical to building scalable web applications are evolving even faster, making the best practices outlined here that much more important if you want to cope.
 
-Thanks [nodejitsu](http://blog.nodejitsu.com/package-dependencies-done-right/)
+Thanks [nodejitsu](http://blog.nodejitsu.com/) for ask your brilliant info.
