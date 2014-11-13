@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Dependencies Done Right
-
+category: Reference
+tags: [tech, geek, dev, tips, quick ref]
+share: true
+comments: false
 ---
-
 "Best practices" is a term that is often misused and thus can be ambiguous in this context. For such reasons, it is important to make clear the goals behind this particular versioning scheme:
 
 1. Strive to be forwards compatible with node.js (within reason) 
