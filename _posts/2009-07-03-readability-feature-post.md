@@ -6,6 +6,7 @@ category: theme
 tags: [docs]
 imagefeature: cover9.jpg
 share: true
+published: false
 ---
 
 This is a sample post with a large feature image up top and tons of text. You can set post image covers by using only Kramdown narkdown, just place something like this: `![cover-image](http://path-to-your-image.jpg)`
