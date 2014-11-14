@@ -1,6 +1,12 @@
 ---
-title: Workflow to GitHub Deployment with Jekyll
+layout: post
+title: My Mini GitHub Deployment Workflow with Jekyll
 description: The short guide.
+comments: true
+share: true
+featured post: true
+category: Workflow
+tags: [git, tips, github, jekyll, dev]
 ---
 
 Grunt is always running when I’m writing or designing. It handles a few things, as defined in my Gruntfile.
