@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: The JavaScript List
 description: "A Curated List of JavaScript Learning Resources."
 share: true
 comments: true
