@@ -3,13 +3,13 @@ layout: page
 permalink: /about/index.html
 title: Katie-Lee Ball, Designer
 tags: [katie ball, roach haus, roachhd]
-imagefeature: http://test.roachhaus.com/cv/img/katie11.png
+imagefeature: false
 chart: true
 ---
-<figure>
+<!-- <figure>
   <img src="http://test.roachhaus.com/cv/img/katie11.png" alt="Hossain Mohammad Faysal">
   <figcaption>Katie-Lee Ball, Designer</figcaption>
-</figure>
+</figure> -->
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
