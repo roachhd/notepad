@@ -55,7 +55,7 @@ featured: true
 I also have a [Big List](http://katieball.me/big-ass-resource-list/) over on at [GitHub](http://github.com/roachhd). If you have something to add just [Fork](https://github.com/roachhd/big-ass-resource-list/fork) it and submit a `pull request`.
 
 
-[1]: http://javascript.crockford.com/performance.html
+[1]: http://roachhd.github.com/notepad/extras/actual-javascript/performance
 [2]: http://javascript.crockford.com/javascript.html
 [3]: http://javascript.crockford.com/zh/javascript.html
 [4]: http://devel.virtage.com/2009/01/cs-javascript-nejnepochopenejsi-programovaci-jazyk-sveta/
