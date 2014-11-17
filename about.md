@@ -2,12 +2,12 @@
 layout: page
 permalink: /about/index.html
 title: Katie-Lee Ball, Designer
-tags: [Hossain, Mohd, Faysal, hmfaysal]
-imagefeature: fourseasons.jpg
+tags: [katie ball, roach haus, roachhd]
+imagefeature: http://test.roachhaus.com/cv/img/katie11.png
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
+  <img src="http://test.roachhaus.com/cv/img/katie11.png" alt="Hossain Mohammad Faysal">
   <figcaption>Katie-Lee Ball, Designer</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ I am a *Bach of Tech* graduate, [R.M.I.T](http://www.rmit.edu.au/) in **Melbourn
 *[UPENN]: University of Pennsylvania
 
 <figure>
-	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Katie Ball">
+	<img src="http://test.roachhaus.com/cv/img/katie11.png" alt="Katie Ball">
 	<figcaption>A picture of me</figcaption>
 </figure>
 
