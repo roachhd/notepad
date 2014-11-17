@@ -5,8 +5,9 @@ title: Actual JavaScript Engine Performance
 
 JavaScript Performance
 (Smaller is better)
-| ----- |
+
 | Browser |  Seconds |
+| ------- | -------- |
 | Chrome 10.0.648.205 |  2.801 |
 | Chrome 13.0.754.0 canary |  0.543 |
 | Firefox 4.0.1 |  0.956 |
