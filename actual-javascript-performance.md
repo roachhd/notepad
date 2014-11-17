@@ -1,6 +1,5 @@
 ---
-layout: post
-category: Extras
+layout: page
 title: Actual JavaScript Engine Performance
 ---
 
