@@ -5,7 +5,7 @@ headline: "Do you have a good way of organising and storing all your different c
 description: "Do you have a good way of organising and storing all your different code snippets?"
 headline: 
 category: Tips n Tricks
-tags: [github, gist, dec, tips]
+tags: [github, gist, tips]
 comments: true
 share: true
 ---
