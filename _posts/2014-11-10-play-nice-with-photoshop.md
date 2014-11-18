@@ -3,8 +3,8 @@ layout: post
 title: Play Nice With Photoshop
 description: "These are a list of common practices we've gathered for delivering design materials to improve the clarity of a PSD's when transferred from design to production."
 category: Design
-tags: [Docs, Design, Photoshop,Workflow, Tips n Tricks]
-comments: false
+tags: [Docs, Design, Photoshop, Workflow, Tips]
+comments: true
 share: true
 ---
 These are a list of common practices we've gathered for delivering design materials to improve the clarity of a PSD's when transferred from design to production.
