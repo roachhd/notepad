@@ -19,7 +19,7 @@ owner:
   avatar:         http://test.roachhaus.com/cv/img/katie11.png
   email:          katie@roachhd.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Coded with :coffee: &amp; &#10084; in Melbourne.
+  description:    Coded with &#10084; in Melbourne.
 # Social networking links used in footer. Update and remove as you like.
   twitter:        mektball
   facebook:       roachhd 
