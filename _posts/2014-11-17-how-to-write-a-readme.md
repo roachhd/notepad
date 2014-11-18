@@ -39,7 +39,6 @@ As per formatting, I would say stick to the Unix traditions as much as possible,
 
 ```
 Documentation
-
 GNU make is fully documented in the GNU Make manual, which is contained
 in this distribution as the file make.texinfo.  You can also find
 on-line and preformatted (PostScript and DVI) versions at the FSF's web
