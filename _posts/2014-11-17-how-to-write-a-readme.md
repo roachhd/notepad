@@ -4,7 +4,7 @@ title: "How to Write a Great README"
 share: true
 comments: true
 category: Tips n Tricks
-tags: [geek, open-source, ref]
+tags: [geek, open-source, readme]
 ---
 As many other have blogged before me, a good README should be simple and succinct, but a great README can save time and encourage developers to look more at your project, especially if it's for something like command-line parameter parsing library.
 
