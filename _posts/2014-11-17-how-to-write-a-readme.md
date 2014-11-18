@@ -6,7 +6,7 @@ comments: true
 category: Tips n Tricks
 tags: [geek, open-source, ref]
 ---
-As others have noted, README should be simple and short, but a good README can save time especially if it's for something like command-line parameter parsing library.
+As many other have blogged before me, a good README should be simple and succinct, but a great README can save time and encourage developers to look more at your project, especially if it's for something like command-line parameter parsing library.
 
 Here's what I think it should include:
 
@@ -50,8 +50,6 @@ site.  There is information there about ordering hardcopy documentation.
   http://www.gnu.org/manual/manual.html 
 ```
 
-
-
 ###Wikipedia defines as:
 
 >A readme (or read me) file contains information about other files in a directory or archive and is very commonly distributed with computer software.
@@ -68,3 +66,9 @@ and it lists the following contents:
 - troubleshooting
 - credits and acknowledgements
 - a changelog
+
+
+That's it for now, but I have another post about readme file soon. They are very important to the developer and assist with planning and keeping on track.
+
+---
+
