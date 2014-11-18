@@ -3,9 +3,9 @@ layout: post
 title: "git git git git"
 description: "A list of my most used Git commands"
 category: Reference
-tags: [tech, geek, dev, git, tips, quick ref]
+tags: [tech, geek, dev, git, tips]
 share: true
-comments: false
+comments: true
 ---
 
 *If you are interested have a look at my `.dotfiles`, found here: https://github.com/roachhd/dotfiles *
