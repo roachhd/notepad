@@ -5,7 +5,7 @@ description: "Easy drop in Quick Snippets for retina GitHub Fork Me ribbons."
 category: Reference
 tags: [reference, code]
 author: Katie Ball
-comments: false
+comments: true
 share: true
 ---
 #####Intro
