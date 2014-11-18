@@ -166,5 +166,3 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 gems:
   - jekyll-sitemap 
 # Create a sitemap using the official Jekyll sitemap gems
- - emoji
-#emoji gem
