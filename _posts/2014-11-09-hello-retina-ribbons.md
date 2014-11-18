@@ -3,9 +3,9 @@ layout: post
 title: Fork Me Retina Ribbons
 description: "Easy drop in Quick Snippets for retina GitHub Fork Me ribbons."
 category: Tips n Tricks
-tags: [geek]
+tags: [geek, open-source, github]
 author: Katie Ball
-comments: false
+comments: true
 share: true
 ---
 
