@@ -36,8 +36,8 @@ As per formatting, I would say stick to the Unix traditions as much as possible,
 
 ###Putting it all together...
 
-```markdown
 
+```
 Documentation
 
 GNU make is fully documented in the GNU Make manual, which is contained
