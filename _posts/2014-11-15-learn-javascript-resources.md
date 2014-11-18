@@ -4,6 +4,8 @@ title: The JavaScript List
 description: "A Curated List of JavaScript Learning Resources."
 share: true
 comments: true
+category: Resources]
+tags: [links, JavaScript, lists]
 featured: true
 ---
 
