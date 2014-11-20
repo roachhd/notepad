@@ -37,7 +37,7 @@ As per formatting, I would say stick to the Unix traditions as much as possible,
 ###Putting it all together...
 
 
-```
+{% highlight markdown %}
 Documentation
 GNU make is fully documented in the GNU Make manual, which is contained
 in this distribution as the file make.texinfo.  You can also find
@@ -47,7 +47,7 @@ site.  There is information there about ordering hardcopy documentation.
   http://www.gnu.org/
   http://www.gnu.org/doc/doc.html
   http://www.gnu.org/manual/manual.html 
-```
+{% endhighlight %}
 
 ###Wikipedia defines as:
 
@@ -68,6 +68,3 @@ and it lists the following contents:
 
 
 That's it for now, but I have another post about readme file soon. They are very important to the developer and assist with planning and keeping on track.
-
----
-
