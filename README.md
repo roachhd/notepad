@@ -1,9 +1,11 @@
 this is my notepad 
 ==================
 
-###my notes for my notepad haha
+[ ![Codeship Status for roachhd/Notepad-1](https://codeship.com/projects/c6bdde60-4e0a-0132-0fa3-1e6c3dad43cf/status)](https://codeship.com/projects/47554)
 
-#####Front Matter
+#####My notes for my notepad haha
+
+######Front Matter
 
      Categories     |   Tags
 ------------------- | ------------------
