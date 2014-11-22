@@ -1,10 +1,9 @@
 this is my notepad 
 ==================
 
-[ ![Codeship Status for roachhd/Notepad](https://codeship.com/projects/c6bdde60-4e0a-0132-0fa3-1e6c3dad43cf/status)](https://codeship.com/projects/47554)
+[![Codeship Status for roachhd/Notepad](https://codeship.com/projects/c6bdde60-4e0a-0132-0fa3-1e6c3dad43cf/status)
 
-
-[ ![David-dm-roachhd/notepad](https://david-dm.org/roachhd/notepad.png) ]
+[![David-dm-roachhd/notepad](https://david-dm.org/roachhd/notepad.png)
 
 
 
