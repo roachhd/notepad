@@ -6,6 +6,7 @@ comments: true
 category: Kids Stuff
 tags: [privacy, schools, security, kids]
 featured: true
+featureimage: ![Digital Citizenship Schools][1]
 ---
 ## What is Digital Citizenship?
 
@@ -36,12 +37,9 @@ The main component of becoming digital citizens is the implementation of a contr
 
 A digital world has changed the face of education, so it is important that school create a world of healthy digital citizens.
 
-[Share Your Digital Citizenship Story, Get a Free Poster!][4]
-
+![poster](https://blog.edmodo.com/wp-content/uploads/2012/10/Screen-Shot-2012-10-15-at-11.41.13-AM1.png)
  
 
 [1]: http://drpfconsults.com/wp-content/uploads/2011/01/Creating-a-Successful-School-Digital-Citzenship-Plan.jpg "Creating a Successful School Digital Citzenship Plan"
 [2]: http://www.digitalcitizenship.net
 [3]: http://www.digitalcitizenship.net/uploads/ISTECompass.pdf
-[4]: http://blog.edmodo.com/2012/10/22/share-your-digital-citizenship-story-get-a-free-poster/
-  
