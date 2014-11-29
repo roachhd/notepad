@@ -1,0 +1,9 @@
+{
+  "name": "notepad",
+  "version": "0.0.1",
+  "description": "My notepad",
+  "author": "Katie Ball <katie@roachhd.com>",
+  "homepage": "http://roachhd.github.io/notepad",
+  "license": "The MIT License (MIT)",
+ }
+}
