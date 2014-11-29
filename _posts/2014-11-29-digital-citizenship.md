@@ -16,9 +16,6 @@ Digital citizenship in schools was designed to educate students of all ages abou
 
 Digital citizenship in schools has been discussed for years, but recently in June 2010, the Online Safety Working Group sent a letter to Congress entitled Youth Safety on a Living Internet. In this report, the Internet is declared "a living thing" in its form and function. Because of this, it grows and changes, so society must be prepared for these changes and know how to steward what has been given. They decided that the job of promoting online safety should fall to the education system because they have the greatest access to computers and other digital media.That being done, teaching students about digital citizenship in schools is now a requirement in school districts across the nation.
 
-![Digital Citizenship Schools][1]
-
-
 ### Elements to Create Plan
 
 So what are the needed elements in order to implement a digital citizenship plan? A better question is probably "Where do we start?" With all the media outlets available today, this subject is difficult to address. It is usually better to assume that everything needs to be included.
