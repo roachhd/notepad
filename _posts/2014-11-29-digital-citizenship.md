@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Digital Citizenship
+title: Creating a Successful School Digital Citizenship Plan
 share: true
 comments: true
 category: Kids Stuff
