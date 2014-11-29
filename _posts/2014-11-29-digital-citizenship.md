@@ -6,7 +6,7 @@ comments: true
 category: Kids Stuff
 tags: [privacy, schools, security, kids]
 featured: true
-imagefeature: ![Digital Citizenship Schools][1]
+imagefeature: http://drpfconsults.com/wp-content/uploads/2011/01/Creating-a-Successful-School-Digital-Citzenship-Plan.jpg 
 ---
 ## What is Digital Citizenship?
 
