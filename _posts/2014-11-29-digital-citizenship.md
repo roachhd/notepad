@@ -6,7 +6,7 @@ comments: true
 category: Kids Stuff
 tags: [privacy, schools, security, kids]
 featured: true
-featureimage: ![Digital Citizenship Schools][1]
+imagefeature: ![Digital Citizenship Schools][1]
 ---
 ## What is Digital Citizenship?
 
