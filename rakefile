@@ -13,7 +13,7 @@ end
 
     desc 'Sets the configuration for production mode.'
     task :pro do
-      edit_config 'url', '/Notepad'
+      edit_config 'url', '/notepad'
     end
   end 
 
