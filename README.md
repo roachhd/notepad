@@ -2,7 +2,7 @@ this is my notepad
 ==================
 
 ![Codeship Status for roachhd/Notepad](https://codeship.com/projects/c6bdde60-4e0a-0132-0fa3-1e6c3dad43cf/status)
-![Travis-ci status](http://travis-ci.org/roachhd/notepad.svg?branch=build)
+![Travis-ci status](http://travis-ci.org/roachhd/notepad.svg?branch=42445923)
 
 ![David-dm-roachhd/notepad](https://david-dm.org/roachhd/notepad.png)
 
