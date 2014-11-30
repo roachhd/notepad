@@ -20,7 +20,7 @@ What kind of meta data can you convey using badges?
 - amount of [gittip](http://gittip.com) donations per week: `tips | $2/week`
 
 
-## Services using the Shields standard
+## Services that give you badges! (using the Shields standard)
 - [Travis CI](https://github.com/travis-ci/travis-ci/issues/630#issuecomment-38054967)
 - [Code Climate](https://codeclimate.com/changelog/510d4fde56b102523a0004bf)
 - [Coveralls](https://coveralls.io/r/kaize/nastachku)
