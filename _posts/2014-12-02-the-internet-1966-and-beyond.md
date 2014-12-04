@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Internet 1966 and beyond
+title: The Internet - 1966 & beyond
 description: "Significant milestones, advancements, and major breakthroughs in the development of the Internet."
 category: Fact Geek
 headline: "Significant milestones, advancements, and major breakthroughs in the development of the Internet."
