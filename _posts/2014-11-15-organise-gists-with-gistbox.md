@@ -3,7 +3,6 @@ layout: post
 title: Organise Gists with GistBox
 headline: "Do you have a good way of organising and storing all your different code snippets?"
 description: "Do you have a good way of organising and storing all your different code snippets?"
-headline: 
 category: Tips n Tricks
 tags: [github, gist, tips]
 comments: true
