@@ -1,7 +1,7 @@
 this is my notepad 
 ==================
 
-![Travis-ci status](http://travis-ci.org/roachhd/notepad.svg?gh-pages=42445923)
+![Travis-ci status](http://travis-ci.org/roachhd/notepad.svg?gh-pages=43905720)
 [![Gem Version](https://badge.fury.io/rb/github-pages.svg)](http://badge.fury.io/rb/github-pages) [![Build Status](https://travis-ci.org/github/pages-gem.svg?branch=master)](https://travis-ci.org/github/pages-gem)
 
 #####My notes for my notepad haha
