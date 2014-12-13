@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build your own Yeoman Generator
-categories: [Development]
+categories: [Please Explain]
 tags: [dev, tools, geek, tips n tricks]
 share: true
 comments: true
