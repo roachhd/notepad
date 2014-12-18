@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bundler Install Issues
+title: SSL Upgrades on Rugy Gems
 ---
 
 # SSL upgrades on rubygems.org and RubyInstaller versions
