@@ -2,7 +2,7 @@
 layout: post
 title: Quick &amp; Dirty Guide to Vim
 categories: Reference
-tags: [Vim, reference]
+tags: [Vim, reference, basics]
 ---
 
 In the world of text editors, there's a plethora of options out there. If you've ever Googled "how to edit HTML sites" or some such, you know what we mean. Allow us, then, to introduce you to VIM, a free website editor that offers many of the same features as Adobe Dreamweaver, and runs on just about every desktop platform. Specifically, it comes by default on the vast majority of Linux distributions, OS X and commercial Unix systems. (It's available to install on Windows, too.) And did we mention it's free? That command line UI isn't necessarily self-explanatory, though, so join us after the break for a quick crash course to help you get started.
