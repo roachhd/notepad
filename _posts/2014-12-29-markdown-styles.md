@@ -1,5 +1,5 @@
 ---
-Katie: post
+layout: post
 title: Markdown Styles
 categories: [Web Development]
 tags: [markdown, css]
