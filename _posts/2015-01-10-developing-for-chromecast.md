@@ -8,7 +8,7 @@ comments: true
 ---
 ## What's This?
 
-Yesterday I set out on a treck to start writing my first Chromecast app. What I found was a woefully incomplete amount
+Yesterday I set out on a mission to start writing my first Chromecast app. What I found was a woefully incomplete amount
 of [documentation](https://developers.google.com/cast/) via Google and several disaparate little projects that other
 developers had worked on. While the task was not insurmountable because of this, I thought why not just write up a simple
 Hello World with commentary to make any would be Chromecast Dev's life easier. So, that's what this is: a barebones
@@ -24,12 +24,12 @@ somewhere. Github has free pages hosting, but in the long run that would be a li
 options and make the decision that works best for you right now.
 
 An important note: The URL you give Google has to be the _exact_ location of your receiver app's index.html. If
-you were to clone this repo and upload it to your server (say `http://mydomain.com`) then the receiver would be located
+you were to clone this repo and upload it to your server `http://mydomain.com` then the receiver would be located
 at `http://mydomain.com/receiver`. You would have to specify that as your URL when whitelisting. Alternatively, if you
 just dumped the receiver app at the root directory of your domain, meaning it would found at `http://mydomain.com`, then
 you would supply that URL. The way the process works now does not have any support for subdirectories. So you have to
 make sure you're specific. Also, if you rename the receiver app from `index.html` to anything else, you'll have to 
-specify that in the URL (e.g. `http://mydomain.com/receiver/sweetapp.html`).
+specify that in the URL e.g. `http://mydomain.com/receiver/sweetapp.html`.
 
 Also, while you're waiting for this you might as well follow the second set of steps on that page and whitelist `localhost`
 in the Chromecast extension.
@@ -213,7 +213,7 @@ First we have our HTML portion:
     </body>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="http://underscorejs.org/underscore-min.js"></script>
-    ...
+    
 
 Something you might notice is that we aren't importing any scripts for the Sender API. That's because this is handled by 
 two things. You should remember way back when we were whitelisting our receiver that we also whitelisted `localhost`
@@ -222,7 +222,7 @@ the extension to inject the Sender API into any page. However, it won't just inj
 require this line:
 
     <html data-cast-api-enabled="true">
-    ...
+    
 
 to tell the extension that we want the API injected on this page. Make sure you don't forget it!
 
@@ -246,7 +246,7 @@ script. We declare our variables and then add some odd looking listener to our `
                 initializeApi();
             }
         });
-    ...
+    
     
 The event listener isn't too crazy. One of the consequences of the way the Sender API gets injected into our pages is that
 we don't really have any control over when it happens. But, the Google Devs were smart and gave us a way of finding out
@@ -263,14 +263,14 @@ for. As per Google's docs, this event looks like this:
 The version number basically lets our Sender decide if it's compatible with this version of the API. Besides that, we
 just make sure that the data in the `MessageEvent` matches the source and event described. Then we initialize our API:
 
-    ...
+    
     initializeApi = function() {
         if (!cast_api) {
             cast_api = new cast.Api();
             cast_api.addReceiverListener('*** YOUR APP ID ****', onReceiverList);
         }
     };
-    ...
+    
 
 I've added a check in here which makes sure we aren't calling this if we all ready have an API. So, we create a new `CastApi`
 object and attach a `ReceiverListener` to it. This will simply tell the `CastApi` that there are receivers which are listening
@@ -284,7 +284,7 @@ which URL to hit when it gets a launch request...but now we're getting ahead of 
 The second parameter to `addReceiverListener` is what callback to use when we get a list of valid receivers. Which brings
 us to...
 
-    ...
+    
     onReceiverList = function(list) {
         if (list.length > 0) {
             receiverList = list;
@@ -296,14 +296,14 @@ us to...
             });
         }
     };
-    ...
+    
     
 According to Google's documentation the `ReceiverListener` fires at least once, regardless of if it's found anything, once
 you register it. So, we start with a check to make sure we actually have receivers. Then we just take that list and
 dump it out in our receiver list element. We store the id of the receiver in a data attribute on the anchor tag so we can
 reference it later. Then we attach click handlers to the list items:
 
-    ...
+    
     receiverClicked = function(e) {
         e.preventDefault();
         
@@ -314,7 +314,7 @@ reference it later. Then we attach click handlers to the list items:
         
         doLaunch(receiver);
     };
-    ...
+    
     
 This isn't too out there...all standard Javascript/jQuery. This is where I end up using Underscore: `_.find(receiverList...`.
 It should be pretty easy to figure out what's going on there. Underscore has a find function that takes two parameters:
@@ -323,7 +323,7 @@ through the list until the supplied function returns true. In our case, this is 
 id matches that of the link we clicked. Simple enough. After we've found the right receiver, we launch our application
 on it:
 
-    ...
+    
     doLaunch = function(receiver) {
         if (!cv_activity) {
             var request = new cast.LaunchRequest('*** YOUR APP ID ***', receiver);
@@ -333,7 +333,7 @@ on it:
             cast_api.launch(request, onLaunch);
         }
     };
-    ...
+    
     
 First we check to make sure we don't already have an `Activity` launched on the receiver. While nothing bad would happen if
 we tried to launch another activity before closing out the first, I figured I'd put that check in there. As long
@@ -347,7 +347,7 @@ local machine, you'd be able to open up this page in your browser, click on the 
 launch. Exciting, right? We'll just add a couple more things to show off some other interactions with the receiver. First,
 that `onLaunch` function:
 
-    ...
+    
     onLaunch = function(activity) {
         if (activity.status === 'running') {
             cv_activity = activity;
@@ -355,7 +355,7 @@ that `onLaunch` function:
             cast_api.sendMessage(cv_activity.activityId, '*** YOUR NAMESPACE ***', {type: 'HelloWorld'});
         }
     };
-    ...
+    
     
 Once our application gets launched on the receiver, why don't we say something to it? First we check the `ActivityStatus`
 that we got back from the `launch` function from before is in the running state. You can think of the `ActivityStatus`
@@ -379,7 +379,7 @@ So, now if you reloaded your sender application and clicked on your receiver lin
 Just one more thing to do and then the tutorial is over. Hooray! Let's add a click handler that will actually end
 our session with the receiver:
 
-    ...
+    
     $killSwitch.on('click', function() {
         cast_api.stopActivity(cv_activity.activityId, function(){
             cv_activity = null;
@@ -387,7 +387,7 @@ our session with the receiver:
             $killSwitch.prop('disabled', true);
         });
     });
-    ...
+    
     
 This one is pretty straight forward. When we click on the kill switch, we call `stopActivity` on the `Cast API`. This does
 exactly what it sounds like. We pass it the `Activity` id from our active activity and it tells the receiver we're done.
