@@ -12,32 +12,19 @@ Yesterday I set out on a mission to start writing my first Chromecast app. What 
 of [documentation](https://developers.google.com/cast/) via Google and several disaparate little projects that other
 developers had worked on. While the task was not insurmountable because of this, I thought why not just write up a simple
 Hello World with commentary to make any would be Chromecast Dev's life easier. So, that's what this is: a barebones
-sender and receiver to help you understand how this all fits together. For now, I only have a Chrome sender. Soon I'll
-probably work on the equivalent for Android. But, let's get started!
+sender and receiver to help you understand how this all fits together. For now, I only have a Chrome sender. Soon I'll probably work on the equivalent for Android. But, let's get started!
 
 ## Get Yourself Whitelisted
 
-I'm not going to go into too much detail with this, because Google did a pretty good job of outlining this process. You
-can go [here](https://developers.google.com/cast/whitelisting) and just follow the instructions. It took me about 12 hours
-to hear a response. One thing to mention is that to start Chromecast development you're going to need to host your receiver app
-somewhere. Github has free pages hosting, but in the long run that would be a little limited. So, look into your
-options and make the decision that works best for you right now.
+I'm not going to go into too much detail with this, because Google did a pretty good job of outlining this process. You can go [here](https://developers.google.com/cast/whitelisting) and just follow the instructions. It took me about 12 hours to hear a response. One thing to mention is that to start Chromecast development you're going to need to host your receiver app somewhere. Github has free pages hosting, but in the long run that would be a little limited. So, look into your options and make the decision that works best for you right now.
 
-An important note: The URL you give Google has to be the _exact_ location of your receiver app's index.html. If
-you were to clone this repo and upload it to your server `http://mydomain.com` then the receiver would be located
-at `http://mydomain.com/receiver`. You would have to specify that as your URL when whitelisting. Alternatively, if you
-just dumped the receiver app at the root directory of your domain, meaning it would found at `http://mydomain.com`, then
-you would supply that URL. The way the process works now does not have any support for subdirectories. So you have to
-make sure you're specific. Also, if you rename the receiver app from `index.html` to anything else, you'll have to 
-specify that in the URL e.g. `http://mydomain.com/receiver/sweetapp.html`.
+An important note: The URL you give Google has to be the _exact_ location of your receiver app's index.html. If you were to clone this repo and upload it to your server `http://mydomain.com` then the receiver would be located at `http://mydomain.com/receiver`. You would have to specify that as your URL when whitelisting. Alternatively, if you just dumped the receiver app at the root directory of your domain, meaning it would found at `http://mydomain.com`, then you would supply that URL. The way the process works now does not have any support for subdirectories. So you have to make sure you're specific. Also, if you rename the receiver app from `index.html` to anything else, you'll have to specify that in the URL e.g. `http://mydomain.com/receiver/sweetapp.html`.
 
-Also, while you're waiting for this you might as well follow the second set of steps on that page and whitelist `localhost`
-in the Chromecast extension.
+Also, while you're waiting for this you might as well follow the second set of steps on that page and whitelist `localhost` in the Chromecast extension.
 
 ## I'm Whitelisted...now What? #
 
-Now the fun part! These apps aren't particularly difficult once you get the hang of it, so don't sweat it if you were
-a little confused from Google's documentation. Right now, it's not very good!
+Now the fun part! These apps aren't particularly difficult once you get the hang of it, so don't sweat it if you were a little confused from Google's documentation. Right now, it's not very good!
 
 To start off with, we're going to go ahead and create our receiver app.
 
@@ -48,14 +35,9 @@ To start off with, we're going to go ahead and create our receiver app.
 
 ### The Receiver 
 
-For both the receiver and the sender app I use a little bit of [jQuery](http://jquery.com/). I'm just going on the
-assumption that you understand it, as well as basic HTML, CSS, and Javascript. If not, you may want to start
-researching and learning those first. Having that base knowledge is important for being able to create useful
-Chromecast apps.
+For both the receiver and the sender app I use a little bit of [jQuery](http://jquery.com/). I'm just going on the assumption that you understand it, as well as basic HTML, CSS, and Javascript. If not, you may want to start researching and learning those first. Having that base knowledge is important for being able to create useful Chromecast apps.
 
-So, one thing to remember is that all Receiver applications are written in HTML5/CSS/Javascript. For some, this might seem
-awesome, and for others it might seem limited. Just remember what Chromecast is supposed to be: a media digester. You can
-still do a lot within these confines, though, so don't get discouraged if you have big ideas.
+So, one thing to remember is that all Receiver applications are written in HTML5/CSS/Javascript. For some, this might seem awesome, and for others it might seem limited. Just remember what Chromecast is supposed to be: a media digester. You can still do a lot within these confines, though, so don't get discouraged if you have big ideas.
 
 Since our receiver is so tiny I'm just going to go ahead and show you the whole source and then make comments:
 
@@ -109,50 +91,36 @@ Not so bad, right? Let's break it down. The HTML chunk should be pretty familiar
         </body>
    
         
-This just sets up where we're going to actually be displaying our content. I did some simple css too. You can look at the
-finished code on Github if you're interested.
+This just sets up where we're going to actually be displaying our content. I did some simple css too. You can look at the finished code on Github if you're interested.
 
-Next comes the scripts. The first just gets us jQuery. The second is what actually gets us access to the Receiver API, so
-make sure you don't leave it out! Otherwise, your app isn't going to work at all.
+Next comes the scripts. The first just gets us jQuery. The second is what actually gets us access to the Receiver API, so make sure you don't leave it out! Otherwise, your app isn't going to work at all.
 
-And then we have our script. Right away you start to see some garbage that mentions `cast`. As you might have guessed, this
-is our first Receiver API call:
+And then we have our script. Right away you start to see some garbage that mentions `cast`. As you might have guessed, this is our first Receiver API call:
 
 ```javascript
     var receiver = new cast.receiver.Receiver('*** YOUR APP ID ****', ['*** YOUR NAMESPACE ***']),
 ```
 
 This creates a new `Receiver` object. This is what we'll be using to facilitate ways of communicating with the client and device.
-Oh, and remember when we whitelisted our device? The e-mail you got should have contained your Application ID. That needs
-to replace `*** YOUR APP ID ***`. As for your namespace, it can be anything you want, but should probably be related to
-the application you're creating. For this tutorial we can use something like `HelloWorld`. Make sure it doesn't
-clash with other namespaces, though, as this is how your Receiver will know what type of messages to listen to
-and how your Sender will know what type of messages to send. More on that later...or right now:
+
+Oh, and remember when we whitelisted our device? The e-mail you got should have contained your Application ID. That needs to replace `*** YOUR APP ID ***`. As for your namespace, it can be anything you want, but should probably be related to the application you're creating. For this tutorial we can use something like `HelloWorld`. Make sure it doesn't clash with other namespaces, though, as this is how your Receiver will know what type of messages to listen to and how your Sender will know what type of messages to send. More on that later...or right now:
 
 ```    
     channelHandler = new cast.receiver.ChannelHandler('*** YOUR NAMESPACE ***'),
 ```    
         
-This little guy, as you might have guessed, is what handles our `Channels`. A `Channel` in this context is used to send
-and receive simple JSON messages to and from the Sender application. The `ChannelHandler` allows us to hook into the events that
-occur on the various `Channels` that get created as the application is being used. It also delegates to
-a `ChannelFactory` (which you'll see a little later) to create new `Channels`. Again,  note the namespace. Make sure
-you use the same one that you defined earlier on in the `Receiver`. This tells our `ChannelHandler` to only worry about
-messages coming from that namespace.
+This little guy, as you might have guessed, is what handles our `Channels`. A `Channel` in this context is used to send and receive simple JSON messages to and from the Sender application. The `ChannelHandler` allows us to hook into the events that occur on the various `Channels` that get created as the application is being used. It also delegates to a `ChannelFactory` (which you'll see a little later) to create new `Channels`. Again,  note the namespace. Make sure you use the same one that you defined earlier on in the `Receiver`. This tells our `ChannelHandler` to only worry about messages coming from that namespace.
 
-The next line is just there to keep track of our messages div so we can swap out the text later. Following that we create our
-`ChannelFactory`:
+The next line is just there to keep track of our messages div so we can swap out the text later. Following that we create our `ChannelFactory`:
 
     
     channelHandler.addChannelFactory(
         receiver.createChannelFactory('*** YOUR NAMESPACE ***'));
     
         
-That namespace again! Just fill it in like before. Here we're adding to our `ChannelHandler` a `ChannelFactory`. Like I said
-eariler, this is how `Channels` actually get created. We use the `Receiver` to create the `ChannelFactory`.
+That namespace again! Just fill it in like before. Here we're adding to our `ChannelHandler` a `ChannelFactory`. Like I said earlier, this is how `Channels` actually get created. We use the `Receiver` to create the `ChannelFactory`.
 
-Great! We've got our `Receiver` and our `ChannelHandler` all set up! Does it work yet? Just a little bit more! First we need
-to tell the receiver to start listening to the world:
+Great! We've got our `Receiver` and our `ChannelHandler` all set up! Does it work yet? Just a little bit more! First we need to tell the receiver to start listening to the world:
 
     
     receiver.start();
@@ -164,9 +132,7 @@ Then we make sure our `ChannelHandler` is listening for `MesssageEvents`:
     channelHandler.addEventListener(cast.receiver.Channel.EventType.MESSAGE, onMessage.bind(this));
     
         
-The second parameter, as you should know from your Javascript training, just delegates the `onMessage` function as our callback
-when we hear a `MessageEvent` and binds `this` as our context. `Channels` do have other types of events. We can also listen
-for when the `Channel` is opened, closed, or when it has an error. For this tutorial we'll just stick with messages, though.
+The second parameter, as you should know from your Javascript training, just delegates the `onMessage` function as our callback when we hear a `MessageEvent` and binds `this` as our context. `Channels` do have other types of events. We can also listen for when the `Channel` is opened, closed, or when it has an error. For this tutorial we'll just stick with messages, though.
 
 Last, we actually do something with the `MessageEvent`:
 
@@ -176,10 +142,7 @@ Last, we actually do something with the `MessageEvent`:
     }
     
         
-These `MessageEvents` have several parameters, but the thing that actually gets sent from the Sender application is the
-`message` object, which is generally going to be represented as JSON. You'll see in the next section that we basically
-define that JSON to look however we want. So there you go. Your first Receiver app! Now let's make a Sender to do
-something with it!
+These `MessageEvents` have several parameters, but the thing that actually gets sent from the Sender application is the `message` object, which is generally going to be represented as JSON. You'll see in the next section that we basically define that JSON to look however we want. So there you go. Your first Receiver app! Now let's make a Sender to do something with it!
 
 
 ---
@@ -187,13 +150,9 @@ something with it!
 
 ### Sender
 
-Before we get started writing the sender app, it'd be good to mention that you'll probably want some way of running a
-web server on your local machine. Without it you can't really test this. For pretty much any platform,
-I suggest [Mongoose](https://code.google.com/p/mongoose/). It's a stupid easy web server. You just drop the executable
-into any directory you want to host, and launch it. You'll be able to access the folder from `localhost:8080`.
+Before we get started writing the sender app, it'd be good to mention that you'll probably want some way of running a web server on your local machine. Without it you can't really test this. For pretty much any platform, I suggest [Mongoose](https://code.google.com/p/mongoose/). It's a stupid easy web server. You just drop the executable into any directory you want to host, and launch it. You'll be able to access the folder from `localhost:8080`.
 
-Now let's whip up a Sender so our Receiver can actually do something! This one is a little longer, so I won't paste in the whole
-source. See my Github page for that.
+Now let's whip up a Sender so our Receiver can actually do something! This one is a little longer, so I won't paste in the whole source. See my Github page for that.
 
 First we have our HTML portion:
 
@@ -215,20 +174,14 @@ First we have our HTML portion:
     <script src="http://underscorejs.org/underscore-min.js"></script>
     
 
-Something you might notice is that we aren't importing any scripts for the Sender API. That's because this is handled by 
-two things. You should remember way back when we were whitelisting our receiver that we also whitelisted `localhost`
-in the Chromecast Extension for Chrome. This basically tells the extension that on the `localhost` domain we are allowing
-the extension to inject the Sender API into any page. However, it won't just inject it all willy nilly. Our sender pages
-require this line:
+Something you might notice is that we aren't importing any scripts for the Sender API. That's because this is handled by two things. You should remember way back when we were whitelisting our receiver that we also whitelisted `localhost` in the Chromecast Extension for Chrome. This basically tells the extension that on the `localhost` domain we are allowing the extension to inject the Sender API into any page. However, it won't just inject it all willy nilly. Our sender pages require this line:
 
     <html data-cast-api-enabled="true">
     
 
 to tell the extension that we want the API injected on this page. Make sure you don't forget it!
 
-Everything else in the HTML section should be pretty clear. We have a container which will list out all the receivers that
-get found and a button to disconnect from the receiver. We import jQuery and [Underscore](http://underscorejs.org)...sorry
-I snuck that one in there. If you don't know about Underscore, you should check it out. It's a really great little
+Everything else in the HTML section should be pretty clear. We have a container which will list out all the receivers that get found and a button to disconnect from the receiver. We import jQuery and [Underscore](http://underscorejs.org)...sorry I snuck that one in there. If you don't know about Underscore, you should check it out. It's a really great little
 'functional' library for Javascript. I only use it for one thing here and I'll describe what's happening when we get there.
 
 I've also done a little styling for this page, which you can look at on the Github. Moving right along, we'll jump into our
