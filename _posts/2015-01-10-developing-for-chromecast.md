@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Developing For ChromeCast
+title: Develop For Chrome Cast
 categories: [App Development]
 tags: [chromecast, app, dev]
 share: true
